@@ -15,7 +15,7 @@
 
 // собираем все якоря; устанавливаем время анимации и количество кадров
 // const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-//       animationTime = 300,
+//       animationTime = 180,
 //       framesCount = 20;
 
 // anchors.forEach(function(item) {
@@ -54,4 +54,23 @@ let burger = document.querySelector('.hamburger')
 burger.addEventListener('click', () => {
     burger.classList.toggle('is-active');
 })
+
+// для LOGO
+
+const logoEl = document.querySelectorAll('.logo span');
+let del = 0.1;
+logoEl.forEach((span) => {
+  span.style.animationDelay = `${del}s`;
+  del += 0.1;
+});
+
+// для DEVELOPER
+
+const spanElements = document.querySelectorAll('.developer-text span');
+let delay = 0.1;
+
+spanElements.forEach((span) => {
+  span.style.animationDelay = `${delay}s`;
+  delay += 0.1;
+});
 
