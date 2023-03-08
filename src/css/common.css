@@ -46,6 +46,7 @@ body {
   width: 100%;
 }
 
+
 .video-text {
   position: absolute;
   top: 0;
@@ -340,7 +341,6 @@ mix-blend-mode: multiply;
     7px -6px 20px #6802bb, 
     7px 2px 20px #fa1776,
     -4px 6px 20px #ffdb0eef;
-    /* vertical-align: middle; */
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
       transition: .5s ease;
