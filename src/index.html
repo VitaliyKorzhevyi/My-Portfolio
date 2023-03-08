@@ -14,18 +14,23 @@
 
   <!-- BANNER -->
 
-  <div class="video-bg">
-      <!-- <video src="./video-bg/videoplayback (1) (online-video-cutter.com).mp4" type="video/mp4" autoplay muted loop></video> -->
-      <div class="effects"></div>
-      <div class="video-bg__content">
-          <h1>iPortfolio</h1>
-      </div>
+  <div class="container-video">
+    <video autoplay loop muted>
+      <source src="./video-bg/pexels-black-blue3.mp4" type="video/mp4">
+    </video>
+      <div class="video-text">
+        <h1>iPortfolio</h1>
+    </div>
+
+    <div class="click-container">
       <a class="banner-text" href="#home">Click me</a>
       <div class="arrow-down">
         <span></span>
         <span></span>
         <span></span>
+      </div>
     </div>
+
   </div>
 
   <!-- HEADER -->
@@ -86,18 +91,148 @@
   </section>
  
 
-  <section class="about" id="about">
+    <div class="circle-logo" id="about">
+        <h2 class="text-logo-about">
+          <span>-</span>
+          <span>-</span>
+          <span>-</span>
+          <span>-</span>
+          <span>K.</span><span>V</span>
+          <span>-</span>
+          <span>-</span>
+          <span>-</span>
+          <span>-</span>
+        </h2>
+    </div>
 
-    <div class="about-img">
+    <section class="about">
+      <div class="text-content">
+        <h2 class="heading">About <span>Me</span></h3>
+        <h3>Frontend Developer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <br> Obcaecati ullam sequi animi, voluptatum tempore quasi atque cumque. 
+          <br>Dignissimos asperiores dolorum, quisquam maiores tempore accusantium?</p>
+  
+      </div>
+  
+      <div class="about-img">
+        <img src="./my-photo2.png" alt="my-photo">
+      </div>
+    </section>
 
-    <div class="circle-logo">
-      <video src="./Korzh.V (2).mp4" type="video/mp4" autoplay muted></video>
-  </div>
+    <div class="sidebar">
+      <div class="logo-details ">
+        <i class='bx bx-code-alt icon bx-dm'></i>
+          <div class="logo_name">iPortfolio</div>
+          <i class='bx bx-menu bx-sm arrow' id="btn" ></i>
+      </div>
+
+      <div class="logo-details">
+        <a href="#">
+        <img src="./icon-sidebar.png" alt="icon-sidebar"></a>
+          <div class="logo_name">Korzh.V</div>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#home">
+            <i class='bx bx-home-alt bx-sm' ></i>
+            <span class="links_name">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+
+        <li>
+         <a href="#about">
+           <i class='bx bx-user bx-sm' ></i>
+           <span class="links_name">About</span>
+         </a>
+         <span class="tooltip">About</span>
+       </li>
+
+       <li>
+         <a href="#">
+           <i class='bx bx-wrench bx-sm' ></i>
+           <span class="links_name">Servise</span>
+         </a>
+         <span class="tooltip">Servise</span>
+       </li>
+
+       <li>
+        <a href="#">
+          <i class='bx bx-shopping-bag bx-sm' ></i>
+          <span class="links_name">Portfolio</span>
+        </a>
+        <span class="tooltip">Portfolio</span>
+       </li>
+
+       <li>
+         <a href="#">
+           <i class='bx bxs-contact bx-sm' ></i>
+           <span class="links_name">Contact</span>
+         </a>
+         <span class="tooltip">Contact</span>
+       </li>
+
+       <li>
+         <a href="#">
+           <i class='bx bx-shopping-bag bx-sm' ></i>
+           <span class="links_name">Portfolio</span>
+         </a>
+         <span class="tooltip">Portfolio</span>
+       </li>
+
+       <li class="facebook">
+         <a href="https://www.facebook.com/profile.php?id=100053228958024">
+          <i class='bx bxl-facebook bx-sm' ></i>
+           <span class="links_name">Facebook</span>
+         </a>
+         <span class="tooltip">Facebook</span>
+       </li>
+
+       <li class="instagram">
+        <a href="https://instagram.com/korzhevyi_v?igshid=ZDdkNTZiNTM=">
+          <i class='bx bxl-instagram bx-sm' ></i>
+          <span class="links_name">Instagram</span>
+        </a>
+        <span class="tooltip">Instagram</span>
+      </li>
+
+      <li class="telegram">
+        <a href="https://t.me/korzh_v">
+          <i class='bx bxl-telegram bx-sm' ></i>
+          <span class="links_name">Telegram</span>
+        </a>
+        <span class="tooltip">Telegram</span>
+      </li>
+
+      <li class="github">
+        <a href="https://github.com/VitaliyKorzhevyi">
+          <i class='bx bxl-github bx-sm' ></i>
+          <span class="links_name">Github</span>
+        </a>
+        <span class="tooltip">Github</span>
+      </li>
+
+      <li class="email">
+        <a href="mailto:malkalmmerlin@gmail.com">
+          <i class='bx bxl-gmail bx-sm' ></i>
+          <span class="links_name">Email</span>
+        </a>
+        <span class="tooltip">Email</span>
+      </li>
+       <!-- <li class="profile">
+           <div class="profile-details">
+             <div class="name_v">
+               <div class="name"></div>
+               <div class="v"></div>
+             </div>
+           </div>
+           <i class='bx bx-log-out' id="log_out" ></i>
+       </li> -->
+      </ul>
+    </div>
 
 
-
-
-  </section>
     <script src="./index.js" type="module"></script>
   </body>
 </html>

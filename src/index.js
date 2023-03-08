@@ -74,3 +74,41 @@ spanElements.forEach((span) => {
   delay += 0.1;
 });
 
+const spanElement = document.querySelectorAll('.text-logo-about span');
+let dela = 0.1;
+
+spanElement.forEach((span) => {
+  span.style.animationDelay = `${dela}s`;
+  dela += 0.1;
+});
+
+// let btnSidebar = document.getElementById('#btnSidebar')
+// let sidebar = document.querySelector('.sidebar')
+
+// btnSidebar.onclick = () => {
+//   sidebar.classList.toggle('active')
+// }
+
+let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-arrow-back");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-arrow-back","bx-menu");//replacing the iocns class
+   }
+  }
+
