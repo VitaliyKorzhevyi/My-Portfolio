@@ -1,0 +1,137 @@
+.about {
+  padding: 40px 16% 1rem;
+}
+
+.circle-logo {
+  font-family: 'Poiret One';
+  font-size: 24px;
+  padding: 30px 9% 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-logo-about span {
+  color: rgb(10, 10, 10);
+  display: inline-block;
+  transition: all 0.5s;
+  animation: logo-about 2s infinite;
+}
+
+@keyframes logo-about {
+  0% {
+    color: rgb(255, 255, 255);
+    transform: translateY(0);
+    margin: 0;
+  }
+  10% {
+    color: #ff2c2c;
+  }
+}
+
+.about {
+  min-height: 100vh;
+  padding: 240px 16% 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.about-img {
+  position: relative;
+  width: 500px;
+  height: 550px;
+  background: linear-gradient(#04111b, #000);
+}
+
+.about-img:before,
+.about-img:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: linear-gradient(
+    45deg,
+    #ff2d2d,
+    #2c2cff,
+    #04121d,
+    #ff4d4d,
+    #effcf9,
+    #973d3d,
+    #2c2cff,
+    #04121d,
+    #4075e9
+  );
+  background-size: 500%;
+  z-index: -1;
+  animation: amimate-about 30s ease infinite;
+}
+
+@keyframes amimate-about {
+  0% {
+    background-position: 40px 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 100px 0;
+  }
+}
+
+.about-img:after {
+  filter: blur(25px);
+}
+
+.about-img img {
+  position: absolute;
+  width: 500px;
+  height: 550px;
+  bottom: 0px;
+}
+
+.text-content {
+  width: 1000px;
+}
+
+.heading {
+  color: #9f9d9d;
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.text-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.text-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+.heading span {
+  font-family: 'Montserrat';
+  -webkit-text-stroke: 1px var(--text-color);
+  color: transparent;
+}
+
+.btn-about {
+  display: inline-block;
+  padding: 0.5rem 1.4rem;
+  background: var(--second-bg-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 20px rgb(75, 117, 255);
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-about:hover {
+  background: rgb(27, 27, 27);
+  box-shadow: none;
+}

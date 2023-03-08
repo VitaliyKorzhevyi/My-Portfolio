@@ -47,47 +47,50 @@
 //   });
 // });
 
-// бургер
-let burger = document.querySelector('.hamburger') 
-    
+// --------------------------- LOGO ---------------------------
 
-burger.addEventListener('click', () => {
-    burger.classList.toggle('is-active');
-})
+// для header
 
-// для LOGO
-
-const logoEl = document.querySelectorAll('.logo span');
-let del = 0.1;
-logoEl.forEach((span) => {
-  span.style.animationDelay = `${del}s`;
-  del += 0.1;
+const logoHeaderEl = document.querySelectorAll('.logo span');
+let step = 0.1;
+logoHeaderEl.forEach((span) => {
+  span.style.animationDelay = `${step}s`;
+  step += 0.1;
 });
 
-// для DEVELOPER
+// для developer
 
-const spanElements = document.querySelectorAll('.developer-text span');
+const logoDeveloperEl = document.querySelectorAll('.developer-text span');
 let delay = 0.1;
 
-spanElements.forEach((span) => {
+logoDeveloperEl.forEach((span) => {
   span.style.animationDelay = `${delay}s`;
   delay += 0.1;
 });
 
-const spanElement = document.querySelectorAll('.text-logo-about span');
-let dela = 0.1;
+// для about
 
-spanElement.forEach((span) => {
-  span.style.animationDelay = `${dela}s`;
-  dela += 0.1;
+const logoAboutEl = document.querySelectorAll('.text-logo-about span');
+let move = 0.1;
+
+logoAboutEl.forEach((span) => {
+  span.style.animationDelay = `${move}s`;
+  move += 0.1;
 });
 
-// let btnSidebar = document.getElementById('#btnSidebar')
-// let sidebar = document.querySelector('.sidebar')
+// для servises
 
-// btnSidebar.onclick = () => {
-//   sidebar.classList.toggle('active')
-// }
+const logoServisesEl = document.querySelectorAll('.text-logo-servises span');
+let sec = 0.1;
+
+logoServisesEl.forEach((span) => {
+  span.style.animationDelay = `${sec}s`;
+  sec += 0.13;
+});
+
+
+
+// SIDEBAR
 
 let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
@@ -111,4 +114,6 @@ let sidebar = document.querySelector(".sidebar");
      closeBtn.classList.replace("bx-arrow-back","bx-menu");//replacing the iocns class
    }
   }
+
+
 

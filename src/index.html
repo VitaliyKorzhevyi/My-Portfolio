@@ -7,10 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>My-Portfolio</title>
   </head>
   <body>
+
+  <div id="app">
+      <p>hello Kursor.js</p>
+  </div>
 
   <!-- BANNER -->
 
@@ -32,8 +37,6 @@
         <span></span>
       </div>
     </div>
-
-  </div>
 
   <!-- HEADER -->
 
@@ -57,13 +60,15 @@
     </div>
 
     <nav class="navbar">
-      <a href="#home" class="active">Home</a>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#servises">Servises</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
+  <!-- HOME -->
 
   <section class="home">
     <div class="home_content">
@@ -92,6 +97,7 @@
     </div>
   </section>
  
+  <!-- LOGO ABOUT -->
 
     <div class="circle-logo" id="about">
         <h2 class="text-logo-about">
@@ -107,134 +113,184 @@
         </h2>
     </div>
 
-    <section class="about">
-      <div class="text-content">
-        <h2 class="heading">About <span>Me</span></h3>
-        <h3>Frontend Developer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          <br> Obcaecati ullam sequi animi, voluptatum tempore quasi atque cumque. 
-          <br>Dignissimos asperiores dolorum, quisquam maiores tempore accusantium?</p>
-  
-      </div>
-  
-      <div class="about-img">
-        <img src="./my-photo2.png" alt="my-photo">
-      </div>
-    </section>
+<!-- ABOUT -->
 
-    <div class="sidebar">
-      <div class="logo-details ">
-        <i class='bx bx-code-alt icon bx-dm'></i>
-          <div class="logo_name">iPortfolio</div>
-          <i class='bx bx-menu bx-sm arrow' id="btn" ></i>
-      </div>
-
-      <div class="logo-details">
-        <a href="#">
-        <img src="./icon-sidebar.png" alt="icon-sidebar"></a>
-          <div class="logo_name">Korzh.V</div>
-      </div>
-      <ul class="nav-list">
-        <li>
-          <a href="#home">
-            <i class='bx bx-home-alt bx-sm' ></i>
-            <span class="links_name">Home</span>
-          </a>
-          <span class="tooltip">Home</span>
-        </li>
-
-        <li>
-         <a href="#about">
-           <i class='bx bx-user bx-sm' ></i>
-           <span class="links_name">About</span>
-         </a>
-         <span class="tooltip">About</span>
-       </li>
-
-       <li>
-         <a href="#">
-           <i class='bx bx-wrench bx-sm' ></i>
-           <span class="links_name">Servise</span>
-         </a>
-         <span class="tooltip">Servise</span>
-       </li>
-
-       <li>
-        <a href="#">
-          <i class='bx bx-shopping-bag bx-sm' ></i>
-          <span class="links_name">Portfolio</span>
-        </a>
-        <span class="tooltip">Portfolio</span>
-       </li>
-
-       <li>
-         <a href="#">
-           <i class='bx bxs-contact bx-sm' ></i>
-           <span class="links_name">Contact</span>
-         </a>
-         <span class="tooltip">Contact</span>
-       </li>
-
-       <li>
-         <a href="#">
-           <i class='bx bx-shopping-bag bx-sm' ></i>
-           <span class="links_name">Portfolio</span>
-         </a>
-         <span class="tooltip">Portfolio</span>
-       </li>
-
-       <li class="facebook">
-         <a href="https://www.facebook.com/profile.php?id=100053228958024">
-          <i class='bx bxl-facebook bx-sm' ></i>
-           <span class="links_name">Facebook</span>
-         </a>
-         <span class="tooltip">Facebook</span>
-       </li>
-
-       <li class="instagram">
-        <a href="https://instagram.com/korzhevyi_v?igshid=ZDdkNTZiNTM=">
-          <i class='bx bxl-instagram bx-sm' ></i>
-          <span class="links_name">Instagram</span>
-        </a>
-        <span class="tooltip">Instagram</span>
-      </li>
-
-      <li class="telegram">
-        <a href="https://t.me/korzh_v">
-          <i class='bx bxl-telegram bx-sm' ></i>
-          <span class="links_name">Telegram</span>
-        </a>
-        <span class="tooltip">Telegram</span>
-      </li>
-
-      <li class="github">
-        <a href="https://github.com/VitaliyKorzhevyi">
-          <i class='bx bxl-github bx-sm' ></i>
-          <span class="links_name">Github</span>
-        </a>
-        <span class="tooltip">Github</span>
-      </li>
-
-      <li class="email">
-        <a href="mailto:malkalmmerlin@gmail.com">
-          <i class='bx bxl-gmail bx-sm' ></i>
-          <span class="links_name">Email</span>
-        </a>
-        <span class="tooltip">Email</span>
-      </li>
-       <!-- <li class="profile">
-           <div class="profile-details">
-             <div class="name_v">
-               <div class="name"></div>
-               <div class="v"></div>
-             </div>
-           </div>
-           <i class='bx bx-log-out' id="log_out" ></i>
-       </li> -->
-      </ul>
+  <section class="about">
+    <div class="text-content">
+      <h2 class="heading">About <span>Me</span></h3>
+      <h3>Frontend Developer</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <br> Obcaecati ullam sequi animi, voluptatum tempore quasi atque cumque. 
+        <br>Dignissimos asperiores dolorum, quisquam maiores tempore accusantium?</p>
+        <a href="#" class="btn-about">Read More</a>
     </div>
 
+    <div class="about-img">
+      <img src="./my-photo2.png" alt="my-photo">
+    </div>
+  </section>
 
+  <!-- SERVISES -->
+
+  <div class="circle-logo" id="servises">
+    <h2 class="text-logo-servises">
+      <span>-</span>
+      <span>-</span>
+      <span>-</span>
+      <span>-</span>
+      <span>K.</span><span>V</span>
+      <span>-</span>
+      <span>-</span>
+      <span>-</span>
+      <span>-</span>
+    </h2>
+</div>
+
+<section class="servises" id="servises">
+
+  <h2 class="heading-servises">Our <span>Servises</span></h2>
+
+  <div class="servises-container">
+
+    <div class="servises-box">
+      <i class='bx bxl-javascript'></i>
+      <h3>Web Development</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Officia corrupti iure, harum temporibus ratione eos dolorum autem assumenda vitae laborum 
+        repellendus accusamus possimus</p>
+        <a href="#" class="btn">Read More </a>
+    </div>
+
+    <div class="servises-box">
+      <i class='bx bx-paint' ></i>
+      <h3>Animation</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Officia corrupti iure, harum temporibus ratione eos dolorum autem assumenda vitae laborum 
+        repellendus accusamus possimus</p>
+        <a href="#" class="btn">Read More </a>
+    </div>
+
+    <div class="servises-box">
+      <i class='bx bxs-devices' ></i>
+      <h3>Adaptive Design</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Officia corrupti iure, harum temporibus ratione eos dolorum autem assumenda vitae laborum 
+        repellendus accusamus possimus</p>
+        <a href="#" class="btn">Read More </a>
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- SIDEBAR -->
+
+  <div class="sidebar">
+
+    <div class="logo-details ">
+      <i class='bx bx-code-alt icon bx-dm'></i>
+        <div class="logo_name">iPortfolio</div>
+        <i class='bx bx-menu bx-sm arrow' id="btn" ></i>
+    </div>
+
+    <div class="logo-details">
+      <a href="#">
+      <img src="./icon-sidebar.png" alt="icon-sidebar"></a>
+        <div class="logo_name">Korzh.V</div>
+    </div>
+
+    <ul class="nav-list">
+      <li>
+        <a href="#home">
+          <i class='bx bx-home-alt bx-sm' ></i>
+          <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+
+      <li>
+        <a href="#about">
+          <i class='bx bx-user bx-sm' ></i>
+          <span class="links_name">About</span>
+        </a>
+        <span class="tooltip">About</span>
+      </li>
+
+      <li>
+        <a href="#servises">
+          <i class='bx bx-wrench bx-sm' ></i>
+          <span class="links_name">Servise</span>
+        </a>
+        <span class="tooltip">Servise</span>
+      </li>
+
+      <li>
+      <a href="#">
+        <i class='bx bx-briefcase bx-sm' ></i>
+        <span class="links_name">Portfolio</span>
+      </a>
+      <span class="tooltip">Portfolio</span>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class='bx bxs-contact bx-sm' ></i>
+          <span class="links_name">Contact</span>
+        </a>
+        <span class="tooltip">Contact</span>
+      </li>
+
+      <li class="facebook">
+        <a href="https://www.facebook.com/profile.php?id=100053228958024">
+        <i class='bx bxl-facebook bx-sm' ></i>
+          <span class="links_name">Facebook</span>
+        </a>
+        <span class="tooltip">Facebook</span>
+      </li>
+
+      <li class="instagram">
+      <a href="https://instagram.com/korzhevyi_v?igshid=ZDdkNTZiNTM=">
+        <i class='bx bxl-instagram bx-sm' ></i>
+        <span class="links_name">Instagram</span>
+      </a>
+      <span class="tooltip">Instagram</span>
+    </li>
+
+    <li class="telegram">
+      <a href="https://t.me/korzh_v">
+        <i class='bx bxl-telegram bx-sm' ></i>
+        <span class="links_name">Telegram</span>
+      </a>
+      <span class="tooltip">Telegram</span>
+    </li>
+
+    <li class="github">
+      <a href="https://github.com/VitaliyKorzhevyi">
+        <i class='bx bxl-github bx-sm' ></i>
+        <span class="links_name">Github</span>
+      </a>
+      <span class="tooltip">Github</span>
+    </li>
+
+    <li class="email">
+      <a href="mailto:malkalmmerlin@gmail.com">
+        <i class='bx bxl-gmail bx-sm' ></i>
+        <span class="links_name">Email</span>
+      </a>
+      <span class="tooltip">Email</span>
+    </li>
+    </ul>
+    
+  </div>
+
+    <script src="https://unpkg.com/kursor"></script>
+    <!-- <script>
+      new kursor({
+          type: 4,
+          removeDefaultCursor: true,
+          color: '#fff'
+      })
+  </script> -->
     <script src="./index.js" type="module"></script>
   </body>
 </html>

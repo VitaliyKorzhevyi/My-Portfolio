@@ -1,0 +1,298 @@
+/* -------------------------------------------------------- SIDEBAR -------------------------------------------------------- */
+
+.logo-details img {
+    width: 48px;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  
+  .logo-details i {
+    margin-bottom: -2px;
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 20%;
+    height: 734px;
+    width: 78px;
+    background: #7e7e7e59;
+    padding: 6px 14px;
+    z-index: 99;
+    transition: all 0.5s ease;
+    border-radius: 0px 18px 18px 0px;
+  }
+  .sidebar.open {
+    width: 250px;
+    height: 734px;
+    left: 0;
+    top: 20%;
+  }
+  .sidebar .logo-details {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .sidebar .logo-details .icon {
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .sidebar .logo-details .logo_name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .sidebar.open .logo-details .icon,
+  .sidebar.open .logo-details .logo_name {
+    opacity: 1;
+  }
+  
+  .logo_name {
+    font-family: 'Poiret One';
+    font-size: 20px;
+    letter-spacing: 0.2em;
+  }
+  
+  .logo-details {
+    display: flex;
+    align-items: center;
+  }
+  .sidebar .logo-details #btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: all 0.4s ease;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .sidebar.open .logo-details #btn {
+    text-align: right;
+    margin-top: 4px;
+  }
+  .sidebar i {
+    color: #fff;
+    height: 60px;
+    min-width: 50px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+  }
+  .sidebar .nav-list {
+    margin-top: 20px;
+    height: 100%;
+  }
+  .sidebar li {
+    position: relative;
+    margin: 8px 0;
+    list-style: none;
+  }
+  .sidebar li .tooltip {
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    color: #020b12;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: 0s;
+  }
+  .sidebar li:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .sidebar.open li .tooltip {
+    display: none;
+  }
+  
+  .sidebar li a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background: #11101d;
+  }
+  .sidebar li a:hover {
+    background: #fff;
+  }
+  .sidebar li a .links_name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+  }
+  .sidebar.open li a .links_name {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .sidebar li a:hover .links_name,
+  .sidebar li a:hover i {
+    transition: all 0.5s ease;
+    color: #11101d;
+  }
+  .sidebar li i {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 12px;
+  }
+  .sidebar li.profile {
+    position: fixed;
+    height: 60px;
+    width: 78px;
+    left: 0;
+    bottom: -8px;
+    padding: 10px 14px;
+    background: #1d1b31;
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
+  .sidebar.open li.profile {
+    width: 250px;
+  }
+  .sidebar li .profile-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .sidebar li img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+  .sidebar li.profile .name,
+  .sidebar li.profile .job {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .sidebar li.profile .job {
+    font-size: 12px;
+  }
+  .sidebar .profile #log_out {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #1d1b31;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0px;
+    transition: all 0.5s ease;
+  }
+  .sidebar.open .profile #log_out {
+    width: 50px;
+    background: none;
+  }
+  
+  /* soc-icon */
+  
+  .sidebar .facebook .tooltip {
+    box-shadow: 0px 0px 50px #446dc6;
+    background: #446dc6;
+  }
+  
+  .sidebar .facebook a:hover i {
+    transition: all 0.5s ease;
+    color: #4c7be0;
+  }
+  
+  .sidebar .facebook a:hover {
+    background: #24396ba4;
+  }
+  
+  .sidebar .instagram .tooltip {
+    box-shadow: -6px -4px 16px #1100ff, 7px -6px 20px #6802bb,
+      7px 2px 20px #fa1776, -4px 6px 20px #ffdb0eef;
+    background: #fff692eb;
+  }
+  
+  .sidebar .instagram a:hover i {
+    transition: all 0.5s ease;
+    color: #ffffff;
+  }
+  
+  .sidebar .instagram a:hover {
+    background: #d6249f;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+  }
+  
+  .sidebar .telegram .tooltip {
+    box-shadow: 0px 0px 34px #00bfff;
+    background: #00bfff;
+  }
+  
+  .sidebar .telegram a:hover i {
+    transition: all 0.5s ease;
+    color: #00bfff;
+  }
+  
+  .sidebar .telegram a:hover {
+    background: #005b79ea;
+  }
+  
+  .sidebar .github .tooltip {
+    box-shadow: 0px 0px 30px#fff;
+    background: linear-gradient(30deg, #5c5c5c, #030303, #fffefe, #8b8b8b);
+    background-size: 300%;
+    z-index: -1;
+    animation: amimate 20s ease;
+  }
+  
+  .sidebar .github a:hover i {
+    transition: all 0.5s ease;
+    color: #fff;
+  }
+  
+  .sidebar .github a:hover {
+    background: linear-gradient(70deg, #5c5c5c, #030303, #fffefe, #8b8b8b);
+    background-size: 300%;
+    z-index: -1;
+    animation: amimate-sidebar 20s ease;
+  }
+  
+  @keyframes amimate-sidebar {
+    0% {
+      background-position: 40px 0;
+    }
+    50% {
+      background-position: 300% 0;
+    }
+    100% {
+      background-position: 100px 0;
+    }
+  }
+  
