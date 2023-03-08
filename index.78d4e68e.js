@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector(".hamburger");e.addEventListener("click",(function(){e.classList.toggle("is-active")}));var t=document.querySelectorAll(".logo span"),n=.1;t.forEach((function(e){e.style.animationDelay="".concat(n,"s"),n+=.1}));var c=document.querySelectorAll(".developer-text span"),o=.1;c.forEach((function(e){e.style.animationDelay="".concat(o,"s"),o+=.1}))}();
-//# sourceMappingURL=index.78d4e68e.js.map
