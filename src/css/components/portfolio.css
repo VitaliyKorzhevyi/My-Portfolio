@@ -1,0 +1,18 @@
+.text-logo-portfolio span {
+    color: rgb(10, 10, 10);
+    display: inline-block;
+    transition: all 0.5s;
+    animation: logo-portfolio 2s infinite;
+  }
+  
+  @keyframes logo-portfolio {
+    0% {
+      color: rgb(255, 255, 255);
+      transform: translateY(0);
+      margin: 0;
+    }
+    10% {
+      color: #000000;
+    }
+
+  }

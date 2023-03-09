@@ -16,4 +16,5 @@
     padding: 0;
     background-color: #020b12;
     color: white;
+    user-select: none;
   }

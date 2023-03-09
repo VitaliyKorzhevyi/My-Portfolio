@@ -49,6 +49,15 @@
 
 // --------------------------- LOGO ---------------------------
 
+var video = document.createElement('video');
+
+// Устанавливаем атрибуты для видео
+video.setAttribute('preload', 'auto');
+video.setAttribute('src', './video-bg/pexels-black-blue4.mp4');
+
+// Предварительно загружаем видео
+video.load();
+
 // для header
 
 const logoHeaderEl = document.querySelectorAll('.logo span');
@@ -86,6 +95,16 @@ let sec = 0.1;
 logoServisesEl.forEach((span) => {
   span.style.animationDelay = `${sec}s`;
   sec += 0.13;
+});
+
+// для portfolio
+
+const logoPortfolioEl = document.querySelectorAll('.text-logo-portfolio span');
+let s = 0.1;
+
+logoPortfolioEl.forEach((span) => {
+  span.style.animationDelay = `${s}s`;
+  s += 0.13;
 });
 
 
