@@ -43,14 +43,16 @@
 }
 
 .heading-servises,
-.healing-portfolio {
+.healing-portfolio,
+.heading-contact {
     color: #9f9d9d;
     text-align: center;
     font-size: 4.5rem;
 }
 
 .heading-servises span,
-.healing-portfolio span{
+.healing-portfolio span,
+.heading-contact span{
     font-family: 'Montserrat';
     -webkit-text-stroke: 1px var(--text-color);
     color: transparent;

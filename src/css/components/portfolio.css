@@ -30,7 +30,7 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
-  margin-bottom: 14rem;
+  margin-bottom: 33rem;
 }
 
 .portfolio-container .portfolio-box {
@@ -68,7 +68,7 @@
   transition: 0.5s ease;
 }
 
-.portfolio-box:hover {
+.portfolio-box:hover .portfolio-layer{
   transform: translateY(0);
 }
 
