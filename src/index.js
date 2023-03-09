@@ -49,14 +49,25 @@
 
 // --------------------------- LOGO ---------------------------
 
-var video = document.createElement('video');
+// let video = document.querySelector('video');
+// let videoText = document.querySelector('.video-text');
 
-// Устанавливаем атрибуты для видео
-video.setAttribute('preload', 'auto');
-video.setAttribute('src', './video-bg/pexels-black-blue4.mp4');
+// video.onload = function() {
+//   videoText.classList.remove("video-nun");
+//   videoText.classList.add("video-play");
+// };
 
-// Предварительно загружаем видео
-video.load();
+// video.onerror = function() {
+//   videoText.classList.add("video-nun");
+//   videoText.classList.remove("video-play");
+// };
+
+
+// video.setAttribute('src', './video-bg/pexels-black-blue5.mp4');
+// video.load();
+
+
+// video.load();
 
 // для header
 
