@@ -69,6 +69,15 @@
 
 // video.load();
 
+// для banner
+
+const logoBannerEl = document.querySelectorAll('.big-logo span');
+let st = 0.1;
+logoBannerEl.forEach((span) => {
+  span.style.animationDelay = `${st}s`;
+  st += 0.15;
+});
+
 // для header
 
 const logoHeaderEl = document.querySelectorAll('.logo span');

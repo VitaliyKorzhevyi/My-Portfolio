@@ -3,76 +3,76 @@
 /* logo */
 
 .page-header {
-    top: 0;
-    left: 0;
-    padding: 2rem 14%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-family: 'Montserrat';
-    font-size: 28px;
-    color: #f3f0ed;
-    font-weight: 700;
-  }
-  
-  .logo span {
-    color: rgb(235, 235, 235);
-    display: inline-block;
-    transition: all 0.5s;
-    animation: animate 2s infinite;
-  }
-  
-  @keyframes animate {
-    0% {
-      color: rgb(255, 255, 255);
-      transform: translateY(0);
-      margin: 0;
-    }
-    10% {
-      color: rgb(47, 43, 248);
-    }
-  }
-  
-  /* _____________________________________________ */
-  
-  .logo-small {
-    font-family: 'Montserrat';
-    color: #f3f0ed;
-    font-weight: 300;
-    font-size: 28px;
-  }
+  top: 0;
+  left: 0;
+  padding: 2rem 14%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .navbar {
-    display: flex;
-  }
-  
-  .navbar a {
-    font-size: 1.7rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-    transition: 0.5s;
-  }
-  
-  .wrapper {
-    display: none;
-  }
+.logo {
+  font-family: 'Montserrat';
+  font-size: 28px;
+  color: #f3f0ed;
+  font-weight: 700;
+}
 
-  .navbar a::after {
-    content: '';
-    height: 2px;
-    width: 0%;
-    background-color: var(--text-color);
-    display: block;
-    transition: 0.3s;
+.logo span {
+  color: rgb(235, 235, 235);
+  display: inline-block;
+  transition: all 0.5s;
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0% {
+    color: rgb(255, 255, 255);
+    transform: translateY(0);
+    margin: 0;
   }
-  
-  .navbar a:hover::after {
-    content: '';
-    height: 2px;
-    width: 100%;
-    background-color: #5577fe;
-    display: block;
+  10% {
+    color: rgb(47, 43, 248);
   }
+}
+
+/* _____________________________________________ */
+
+.logo-small {
+  font-family: 'Montserrat';
+  color: #f3f0ed;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.5s;
+}
+
+.wrapper {
+  display: none;
+}
+
+.navbar a::after {
+  content: '';
+  height: 2px;
+  width: 0%;
+  background-color: var(--text-color);
+  display: block;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #5577fe;
+  display: block;
+}

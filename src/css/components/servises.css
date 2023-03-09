@@ -42,13 +42,15 @@
   cursor: pointer;
 }
 
-.heading-servises {
+.heading-servises,
+.healing-portfolio {
     color: #9f9d9d;
     text-align: center;
     font-size: 4.5rem;
 }
 
-.heading-servises span {
+.heading-servises span,
+.healing-portfolio span{
     font-family: 'Montserrat';
     -webkit-text-stroke: 1px var(--text-color);
     color: transparent;
@@ -61,7 +63,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-bottom: 20rem;
+    margin-bottom: 27rem;
 }
 
 .servises-box {
