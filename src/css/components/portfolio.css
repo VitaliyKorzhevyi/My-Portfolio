@@ -47,7 +47,7 @@
 }
 
 .portfolio-box img:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   transform: translateY(0);
 }
 
@@ -77,7 +77,7 @@
 }
 
 .portfolio-layer p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin: 0.3rem 0 1rem;
 }
 
@@ -87,13 +87,13 @@
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background-color: #1f1f1f;
+  background-color: #555555;
   border-radius: 50%;
   transition: all 0.3s;
 }
 
 .portfolio-layer a:hover {
-  background-color: #656363;
+  background-color: #a0a0a0;
 }
 
 .portfolio-layer a i {

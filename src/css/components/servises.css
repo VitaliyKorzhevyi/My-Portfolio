@@ -33,7 +33,7 @@
 
 .servises p{
     margin-bottom: 1.3rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: .1s ease;
 }
 
@@ -70,7 +70,7 @@
 
 .servises-box {
     flex: 1 1 30rem;
-    background-color: #9f9d9d;
+    background-color: #5f5f5f;
     padding: 3rem 2rem 4rem;
     text-align: center;
     border: .2rem solid;

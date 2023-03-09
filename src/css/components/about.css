@@ -40,9 +40,10 @@
 
 .about-img {
   position: relative;
-  width: 500px;
+  min-width: 500px;
   height: 550px;
   background: linear-gradient(#04111b, #000);
+  margin-right: 60px;
 }
 
 .about-img:before,
@@ -106,6 +107,7 @@
 .text-content h2 {
   text-align: left;
   line-height: 1.2;
+  margin-top: -1rem;
 }
 
 .text-content p {

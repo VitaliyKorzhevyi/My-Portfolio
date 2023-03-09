@@ -155,4 +155,9 @@ let sidebar = document.querySelector(".sidebar");
   }
 
 
+// SCROLL ANIMATION
+
+
+
+
 

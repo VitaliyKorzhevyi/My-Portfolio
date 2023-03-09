@@ -33,6 +33,10 @@
   font-size: 1.6rem;
 }
 
+.text-1 {
+  margin-top: 16px;
+}
+
 .developer-text span {
   color: rgb(235, 235, 235);
   display: inline-block;
@@ -55,8 +59,8 @@
 
 .home-img {
   position: relative;
-  width: 640px;
-  height: 500px;
+  min-width: 700px;
+  height: 560px;
   background: linear-gradient(#04111b, #000);
   margin-left: 52px;
 }
@@ -92,8 +96,8 @@
 
 .home-img img {
   position: absolute;
-  width: 640px;
-  height: 500px;
+  width: 700px;
+  height: 560px;
   bottom: 0px;
 }
 
