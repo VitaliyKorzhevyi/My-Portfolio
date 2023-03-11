@@ -17,12 +17,13 @@
 }
 
 .portfolio {
-  background-color: #1d1d1d;
-  padding: 40px 12% 1rem;
+  /* background-color: #6f6f6f; як варыант*/
+  background-color: #6f6f6f;
+  padding: 12px 12% 1rem;
 }
 
 .portfolio h2 {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .portfolio-container {
@@ -30,13 +31,13 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
-  margin-bottom: 33rem;
+  margin-bottom: 30rem;
 }
 
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 1.7rem;
-  box-shadow: 0 0.1rem 1.4rem #000000;
+  box-shadow: 0 0.2rem 0.8rem #1c1c1cb5;
   overflow: hidden;
   display: flex;
 }
@@ -68,7 +69,7 @@
   transition: 0.5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer{
+.portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
 }
 
@@ -99,4 +100,9 @@
 .portfolio-layer a i {
   font-size: 2rem;
   color: #000000;
+}
+
+.note-portfolio {
+  text-align: center;
+  font-size: 1.2rem;
 }

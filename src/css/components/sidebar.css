@@ -14,7 +14,7 @@
     position: fixed;
     left: 0;
     top: 20%;
-    height: 734px;
+    height: 792px;
     width: 78px;
     background: #7e7e7e59;
     padding: 6px 14px;
@@ -24,7 +24,7 @@
   }
   .sidebar.open {
     width: 250px;
-    height: 734px;
+    height: 792px;
     left: 0;
     top: 20%;
   }
@@ -134,6 +134,16 @@
   .sidebar li a:hover {
     background: #fff;
   }
+
+  .sidebar .nav-list li.active a {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+
+  /* .nav-list li.active {
+    background-color: #ffffff;
+  } */
+
   .sidebar li a .links_name {
     color: #fff;
     font-size: 15px;

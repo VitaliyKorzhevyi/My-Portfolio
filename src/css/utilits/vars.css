@@ -5,4 +5,26 @@
     --text-color: #dfdfdf;
     --second-text-color: #9093b1;
     --social-icon-color: #fff;
+
+    --btn-bg-color: #020b12;
+    --btn-bg-color-hover: #eeeeee;
+
+    --btn-text-color: #eeeeee;
+    --btn-text-color-hover: #020b12;
+
+    --logo-color: rgb(47, 43, 248);
+  }
+
+
+
+  @media (max-width: 1200px){
+    
+  }
+
+  @media (max-width: 768px){
+    
+  }
+
+  @media (max-width: 480px){
+    
   }

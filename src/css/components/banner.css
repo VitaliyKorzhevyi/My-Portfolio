@@ -4,6 +4,7 @@
   height: 100vh;
   width: 100%;
   position: relative;
+
 }
 
 .video-text {
@@ -16,9 +17,14 @@
   align-items: center;
   justify-content: center;
   font-size: 110px;
+
   -webkit-text-stroke: 0.5px var(--text-color);
   color: transparent;
   background-color: #000;
+}
+
+.video-text h1{
+  margin-top: -8rem;
 }
 
 .big-logo span {
@@ -53,18 +59,24 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  top: 85%;
-  left: 49%;
-  gap: 8px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
 }
 
 .banner-text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  margin: -50px 0 0 -60px;
+
   font-family: 'Outfit';
   font-size: 30px;
   cursor: pointer;
   border: 0;
   color: var(--text-color);
-  margin-bottom: 30px;
+  
 }
 
 .banner-text::after {
@@ -83,6 +95,12 @@
   background-color: #5577fe;
   display: block;
 }
+
+/* Arrow */
+
+.arrow-down {
+margin-right: -2rem;
+}
   
 .arrow-down span {
   display: block;
@@ -91,7 +109,7 @@
   border-bottom: 5px solid #1e34ff;
   border-right: 5px solid #ff2c2c;
   transform: rotate(45deg);
-  margin: -16px;
+  /* margin: -16px; */
   animation: arrow-down 2s infinite;
 }
 .arrow-down span:nth-child(2) {

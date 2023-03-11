@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 @import url('./base/rezet.css');
 @import url('./utilits/vars.css');
@@ -12,5 +14,6 @@
 @import url('./components/about.css');
 @import url('./components/servises.css');
 @import url('./components/portfolio.css');
+@import url('./components/experimental-section.css');
 @import url('./components/contacts.css');
 @import url('./components/sidebar.css');

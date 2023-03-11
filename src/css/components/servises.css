@@ -1,11 +1,21 @@
-.text-logo-servises span {
+.services-logo {
+  font-family: 'Poiret One';
+  font-size: 24px;
+  padding: 30px 9% 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-logo-services span {
     color: rgb(10, 10, 10);
     display: inline-block;
     transition: all 0.5s;
-    animation: logo-servises 2s infinite;
+    animation: logo-services 2s infinite;
   }
   
-  @keyframes logo-servises {
+  @keyframes logo-services {
     0% {
       color: rgb(255, 255, 255);
       transform: translateY(0);
@@ -17,32 +27,31 @@
 
   }
 
-.servises {
-    padding: 40px 16% 1rem;
+.services {
+    padding: 4px 14% 6rem;
 }
 
-.servises h2{
-    margin-bottom: 5rem;
-    margin: 1rem 0 7rem;
+.services h2{
+    margin: -1rem 0 3rem;
 }
 
-.servises h3{
+.services h3{
     font-size: 1.5rem;
     margin-bottom: 1.3rem;
 }
 
-.servises p{
+.services p{
     margin-bottom: 1.3rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transition: .1s ease;
 }
 
-.servises p:hover {
+.services p:hover {
   transform: scale(1.02);
   cursor: pointer;
 }
 
-.heading-servises,
+.heading-services,
 .healing-portfolio,
 .heading-contact {
     color: #9f9d9d;
@@ -50,7 +59,7 @@
     font-size: 4.5rem;
 }
 
-.heading-servises span,
+.heading-services span,
 .healing-portfolio span,
 .heading-contact span{
     font-family: 'Montserrat';
@@ -58,17 +67,17 @@
     color: transparent;
   }
 
-.servises-container {
+.services-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-bottom: 27rem;
+    margin-bottom: 4rem;
 }
 
-.servises-box {
+.services-box {
     flex: 1 1 30rem;
     background-color: #5f5f5f;
     padding: 3rem 2rem 4rem;
@@ -79,7 +88,7 @@
     transition: .1s ease;
 }
 
-.servises-box::before {
+.services-box::before {
     content: "";
     position: absolute;
     top: -20px;
@@ -93,10 +102,10 @@
     background-size: 170%;
     border-radius: 40px;
     z-index: -1;
-    animation: amimateServises 30s ease infinite;
+    animation: amimateServices 30s ease infinite;
 }
 
-@keyframes amimateServises {
+@keyframes amimateServices {
     0% {
       background-position: 0 0;
     }
@@ -108,25 +117,25 @@
     }
   }
 
-.servises-box i{
+.services-box i{
     font-size: 7rem;
     margin-bottom: 2rem;
     -webkit-text-stroke: 1px var(--text-color);
     color: #ffffff;
 }
 
-.servises-box .js{
+.services-box .js{
   color: #ffd722;
   background-color: #000000;
 }
 
-.servises-box .paint{
+.services-box .paint{
   color: rgb(255, 255, 255);
   cursor: pointer;
 
 }
 
-.servises-box .paint:hover{
+.services-box .paint:hover{
   color: blue;
   animation: color-change 5s linear infinite;
 }
@@ -156,11 +165,11 @@
 }
 
 
-.servises-box .devices{
+.services-box .devices{
   color: #5076ff;
 }
 
-.servises-box a{
+.services-box a{
     display: inline-block;
     padding: 1rem 1.8rem;
     background: var(--second-bg-color);
@@ -171,7 +180,7 @@
     transition: 0.3s ease;
   }
   
-  .servises-box a:hover {
+  .services-box a:hover {
     color: var(--second-bg-color);
     background-color: #ebebeb;
     box-shadow: none;

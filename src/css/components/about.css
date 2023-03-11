@@ -1,5 +1,10 @@
-.about {
+.about-content {
   padding: 40px 16% 1rem;
+  min-height: 100vh;
+  padding: 240px 16% 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .circle-logo {
@@ -26,16 +31,8 @@
     margin: 0;
   }
   10% {
-    color: #ff2c2c;
+    color: var(--logo-color);
   }
-}
-
-.about {
-  min-height: 100vh;
-  padding: 240px 16% 1rem;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
 }
 
 .about-img {
@@ -56,12 +53,9 @@
   left: -2px;
   background: linear-gradient(
     45deg,
-    #ff2d2d,
     #2c2cff,
     #04121d,
-    #ff4d4d,
     #effcf9,
-    #973d3d,
     #2c2cff,
     #04121d,
     #4075e9
@@ -123,8 +117,9 @@
 
 .btn-about {
   display: inline-block;
-  padding: 0.5rem 1.4rem;
-  background: var(--second-bg-color);
+  padding: 1rem 2rem;
+  color: var(--btn-text-color);
+  background: var(--btn-bg-color);
   border-radius: 4rem;
   box-shadow: 0 0 20px rgb(75, 117, 255);
   font-size: 1.4rem;
@@ -134,6 +129,7 @@
 }
 
 .btn-about:hover {
-  background: rgb(27, 27, 27);
+  color: var(--btn-text-color-hover);
+  background: var(--btn-bg-color-hover);
   box-shadow: none;
 }
