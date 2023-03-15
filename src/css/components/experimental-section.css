@@ -1,6 +1,10 @@
 .experimental {
-  padding: 40px 12% 1rem;
-height: 1240px;
+  position: relative;
+  padding-top: 40px;
+  padding-left: 12%;
+  padding-right: 12%;
+
+  height: 1440px;
   background: linear-gradient(
     150deg,
     rgba(2, 11, 18, 1) 66%,
@@ -11,10 +15,12 @@ height: 1240px;
   );
 }
 
-.experimental p {
-    margin-top: 2rem;
+.experimental-text {
+    padding: 2rem;
+    margin: auto;
   text-align: center;
   font-size: 1.2rem;
+  width: 700px;
 }
 .video-experimental {
     margin-top: 20%;
@@ -58,7 +64,7 @@ height: 1240px;
   /* CUBE */
 
   .wrap {
-    margin-top: 150px;
+    margin-top: 100px;
     perspective: 1000px;
     perspective-origin: 50% 50%;
   }
@@ -88,7 +94,7 @@ height: 1240px;
   
   .back {
     transform: translateZ(-100px) rotateY(180deg);
-    background-color: #7263d6;
+    background-color: #ffd722;
   }
   
   .right {
@@ -106,7 +112,7 @@ height: 1240px;
   .top {
     transform: rotateX(-270deg) translateY(-100px);
     transform-origin: top center;
-    background-color: #000000;
+    background-color: #ffd722;
   }
   
   .bottom {
@@ -165,3 +171,10 @@ height: 1240px;
     padding: 75px;
   }
 
+.note-portfolio {
+  width: 800px;
+  padding: 2rem;
+  margin-top: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+}

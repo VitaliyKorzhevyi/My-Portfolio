@@ -17,13 +17,19 @@
 }
 
 .portfolio {
-  /* background-color: #6f6f6f; як варыант*/
-  background-color: #6f6f6f;
+  /* background-color: #6f6f6f; як варіант*/
+  background-color: #c9c9c9;
   padding: 12px 12% 1rem;
 }
 
-.portfolio h2 {
-  margin-bottom: 2rem;
+
+.healing-portfolio {
+  margin: 1rem 0 5rem;
+}
+
+.healing-portfolio span{
+  -webkit-text-stroke: 1px #020b12;
+  color: transparent;
 }
 
 .portfolio-container {
@@ -31,7 +37,7 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
-  margin-bottom: 30rem;
+  margin-bottom: 40rem;
 }
 
 .portfolio-container .portfolio-box {
@@ -48,7 +54,6 @@
 }
 
 .portfolio-box img:hover {
-  /* transform: scale(1.1); */
   transform: translateY(0);
 }
 
@@ -86,23 +91,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background-color: #555555;
+  width: 4rem;
+  height: 4rem;
+  background-color: #f4f4f4bf;
   border-radius: 50%;
   transition: all 0.3s;
 }
 
 .portfolio-layer a:hover {
-  background-color: #a0a0a0;
+  background-color: #ffffff;
 }
 
 .portfolio-layer a i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #000000;
 }
 
-.note-portfolio {
-  text-align: center;
-  font-size: 1.2rem;
-}
