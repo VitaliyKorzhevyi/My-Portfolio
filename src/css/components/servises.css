@@ -1,3 +1,4 @@
+@media screen and (min-width: 1024px) {
 .services-logo {
   font-family: 'Poiret One';
   font-size: 24px;
@@ -193,3 +194,6 @@
 .text-adaptive {
   padding-bottom: 3.1rem;
 }
+}
+
+

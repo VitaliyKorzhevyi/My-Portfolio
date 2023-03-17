@@ -1,3 +1,5 @@
+
+@media screen and (min-width: 1024px) {
 .about-content {
   padding: 40px 16% 1rem;
   min-height: 100vh;
@@ -133,3 +135,5 @@
   background: var(--btn-bg-color-hover);
   box-shadow: none;
 }
+}
+

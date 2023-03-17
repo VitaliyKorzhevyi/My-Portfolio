@@ -25,10 +25,14 @@ background-size: 20px 20px;
 background-repeat: repeat; */
 }
 
-li{
+@media screen and (max-width: 1024px) {
+section {
+  display: none;
+}
+/* .sidebar {
+  display: none;
+} */
+}
+ ul {
   list-style: none;
-}
-
-p{
-  font-family: 'Nunito';
-}
+ }

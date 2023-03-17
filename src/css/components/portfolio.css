@@ -1,3 +1,4 @@
+@media screen and (min-width: 1024px) {
 .text-logo-portfolio span {
   color: rgb(10, 10, 10);
   display: inline-block;
@@ -106,4 +107,7 @@
   font-size: 1.5rem;
   color: #000000;
 }
+
+}
+
 
