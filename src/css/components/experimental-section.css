@@ -59,10 +59,11 @@
   /* CUBE */
 
   .wrap {
-    margin-top: 100px;
+    margin-top: 150px;
     perspective: 1000px;
     perspective-origin: 50% 50%;
   }
+
   .cube {
     margin: auto;
     position: relative;
@@ -78,43 +79,39 @@
     height: 100%;
     width: 100%;
     opacity: 0.7;
+    background-color: #000;
     border: solid 1px #eeeeee;
-
+    color: #ffffff;
   }
+
   .front {
     transform: translateZ(100px);
-    background-color: #ffffff;
-    color: #000000;
   }
   
   .back {
     transform: translateZ(-100px) rotateY(180deg);
-    background-color: #ffd722;
   }
   
   .right {
     transform: rotateY(-270deg) translateX(100px);
     transform-origin: top right;
-    background-color: #000000;
   }
   
   .left {
     transform: rotateY(270deg) translateX(-100px);
     transform-origin: center left;
-    background-color: #000000;
   }
   
   .top {
     transform: rotateX(-270deg) translateY(-100px);
     transform-origin: top center;
-    background-color: #ffd722;
   }
   
   .bottom {
     transform: rotateX(270deg) translateY(100px);
     transform-origin: bottom center;
-    background-color: #000000;
   }
+
   @keyframes rotate {
     from {
       transform: rotateX(0deg) rotateY(0deg);
@@ -126,42 +123,28 @@
   }
   
   .cube {
-    animation: rotate 8s infinite linear;
+    animation: rotate 20s infinite linear;
   }
-  
+
   .wrap:hover .front {
     transform: translateZ(200px);
   }
-  
   .wrap:hover .back {
     transform: translateZ(-200px) rotateY(180deg);
   }
-  
   .wrap:hover .right {
     transform: rotateY(-270deg) translateZ(100px) translateX(100px);
   }
-  
   .wrap:hover .left {
     transform: rotateY(270deg) translateZ(100px) translateX(-100px);
   }
-  
   .wrap:hover .top {
     transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
   }
-  
   .wrap:hover .bottom {
     transform: rotateX(270deg) translateZ(100px) translateY(100px);
   }
-  
-  
+
   .cube > div {
     transition: transform 0.2s ease-in;
-  }
-
-  .cube a{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 75px;
   }
