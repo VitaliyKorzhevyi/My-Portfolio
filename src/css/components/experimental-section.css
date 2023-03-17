@@ -22,13 +22,8 @@
   font-size: 1.2rem;
   width: 700px;
 }
-.video-experimental {
+.cube-experimental {
     margin-top: 20%;
-}
-
-.video-experimental video {
-  width: 400px;
-  height: 400px;
 }
 
 .healing-experimental {
@@ -170,11 +165,3 @@
     align-items: center;
     padding: 75px;
   }
-
-.note-portfolio {
-  width: 800px;
-  padding: 2rem;
-  margin-top: 18rem;
-  margin-left: auto;
-  margin-right: auto;
-}
