@@ -1,3 +1,9 @@
+@media screen and (max-width: 767.99px) {
+  .services {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1024px) {
 .services-logo {
   font-family: 'Poiret One';

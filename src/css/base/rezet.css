@@ -25,10 +25,17 @@ background-size: 20px 20px;
 background-repeat: repeat; */
 }
 
-@media screen and (max-width: 1024px) {
-section {
-  display: none;
+@media screen and (max-width: 767.99px) {
+  section {
+padding: 0 15px;
+  }
 }
+
+@media screen and (max-width: 1024px) {
+/* section {
+  display: none;
+} */
+
 /* .sidebar {
   display: none;
 } */

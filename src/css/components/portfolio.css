@@ -1,3 +1,9 @@
+@media screen and (max-width: 767.99px) {
+  .portfolio {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1024px) {
 .text-logo-portfolio span {
   color: rgb(10, 10, 10);

@@ -1,6 +1,6 @@
 /* -------------------------------------------------------- SIDEBAR -------------------------------------------------------- */
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 768px) {
   .sidebar {
    display: none;
   }
@@ -20,7 +20,19 @@
   }
 
   .mobile-sidebar li i {
-    font-size: 28px;
+    font-size: 20px;
+  }
+
+  .mobile-sidebar li a {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    gap: 4px;
+  }
+
+  .mobile-sidebar__text{
+    font-size: 10px;
+    font-family: 'Nunito';
   }
 
   .mobile-sidebar li {
@@ -35,14 +47,14 @@
   }
 
   .mobile-sidebar li:hover {
-color: #030303;
+    color: #030303;
     background-color: #ffffffbb;
   }
 
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768.1px) {
 .mobile-sidebar{
   display: none;
   }
